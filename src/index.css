@@ -27,46 +27,72 @@ code {
 }
 
 .banner {
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.1) ), 
-  url(/public/assets/images/background.jpeg);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.1)),
+    url(/public/assets/images/background.jpeg);
+}
+
+.banner-sportscar {
+  @apply content-end place-items-end;
+}
+
+.banner-subtitle {
+  @apply content-center;
+}
+
+.banner-sportscar {
+  @apply content-end place-items-end;
+}
+
+.banner-subtitle {
+  @apply content-center;
 }
 
 @media (aspect-ratio: 1/1) {
   .main-container {
     aspect-ratio: 1/1;
   }
+
   .banner {
-    height: 35%;
-    height: 380px;
+    max-height: 35%;
+    min-height: 380px;
   }
+
   .square-banner {
     @apply grid grid-cols-2;
   }
+
   .banner-title {
     @apply text-8xl;
   }
-  .banner-subtitle{
-    @apply text-4xl;
+
+  .banner-subtitle {
+    @apply text-4xl py-5;
     font-size: 2.5rem;
   }
+
   .banner-sportscar {
     @apply row-span-2;
   }
+
   .portrait-banner {
-    display:none;
+    display: none;
   }
+
   .cards {
     height: 49%;
   }
+
   .hide-aspect {
     display: none;
   }
+
   .footer {
-    height: 16%;
-    height: 180px;
+    max-height: 16%;
+    min-height: 180px;
   }
+
   .footer-text {
-    display:none;
+    display: none;
   }
 }
 
@@ -74,25 +100,31 @@ code {
   .main-container {
     aspect-ratio: 9/16;
   }
+
   .banner {
-    height: 26.04%;
-    height: 500px;
+    max-height: 26.04%;
+    min-height: 500px;
   }
-  .square-banner{
+
+  .square-banner {
     display: none;
   }
+
   .banner-title {
     @apply text-9xl;
   }
-  .banner-subtitle{
+
+  .banner-subtitle {
     @apply text-5xl;
   }
+
   .cards {
-    height: 58.34%;
-    height: 1120px;
+    min-height: 58.34%;
+    max-height: 1120px;
   }
+
   .footer {
-    height: 15.62%;
-    height: 300px;
+    max-height: 15.62%;
+    min-height: 300px;
   }
 }

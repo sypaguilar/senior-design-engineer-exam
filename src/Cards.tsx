@@ -26,7 +26,7 @@ function Cards() {
     ];
 
     return (
-        <div className="p-20 w-screen cards content-center overflow-auto">
+        <div className="p-20 w-screen cards content-center">
             <div className="grid grid-cols-2 gap-20 justify-around">
                 <Card data={carData} className={`text-center`} />
             </div>

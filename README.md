@@ -4,9 +4,9 @@
 
 ![1080 x 1920](https://github.com/sypaguilar/senior-design-engineer-exam/blob/main/public/results/1080x1920.png)
 
-## 1920x1920
+## 1080x1080
 
-![1920 x 1920](https://github.com/sypaguilar/senior-design-engineer-exam/blob/main/public/results/1920x1920.png)
+![1080 x 1080](https://github.com/sypaguilar/senior-design-engineer-exam/blob/main/public/results/1080x1080.png)
 
 # Getting Started with Create React App
 
