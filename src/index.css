@@ -27,5 +27,72 @@ code {
 }
 
 .banner {
-  background-image: url(/public/assets/images/background.jpeg);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.1) ), 
+  url(/public/assets/images/background.jpeg);
+}
+
+@media (aspect-ratio: 1/1) {
+  .main-container {
+    aspect-ratio: 1/1;
+  }
+  .banner {
+    height: 35%;
+    height: 380px;
+  }
+  .square-banner {
+    @apply grid grid-cols-2;
+  }
+  .banner-title {
+    @apply text-8xl;
+  }
+  .banner-subtitle{
+    @apply text-4xl;
+    font-size: 2.5rem;
+  }
+  .banner-sportscar {
+    @apply row-span-2;
+  }
+  .portrait-banner {
+    display:none;
+  }
+  .cards {
+    height: 49%;
+  }
+  .hide-aspect {
+    display: none;
+  }
+  .footer {
+    height: 16%;
+    height: 180px;
+  }
+  .footer-text {
+    display:none;
+  }
+}
+
+@media (aspect-ratio: 9/16) {
+  .main-container {
+    aspect-ratio: 9/16;
+  }
+  .banner {
+    height: 26.04%;
+    height: 500px;
+  }
+  .square-banner{
+    display: none;
+  }
+  .banner-title {
+    @apply text-9xl;
+  }
+  .banner-subtitle{
+    @apply text-5xl;
+  }
+  .cards {
+    height: 58.34%;
+    height: 1120px;
+  }
+  .footer {
+    height: 15.62%;
+    height: 300px;
+  }
 }

@@ -1,18 +1,27 @@
 import React from "react";
 import "./App.css";
+import SportsCar from "SportsCar";
 
 function Banner() {
     return (
-        <div className={`w-screen banner bg-top bg-cover content-center h-2/6`}>
-            <div className={`grid grid-cols-2 py-10 px-5`}>
-                <p className={`text-white font-grotesqueBold text-8xl xl:text-9xl`}>Ready to own a car?</p>
-                <div className="row-span-2 content-end">
-                    <img
-                        src="assets/images/Sports Car White.svg"
-                        alt="Sports Car White"
-                        className="row-span-2 content-end object-fit w-xl xl:w-full" />
+        <div className={`w-screen banner bg-right-top bg-cover h-full px-5 content-center text-white`}>
+            <div className={`portrait-banner`}>
+                <p className={`flex font-grotesqueBold banner-title`}>Ready to<br />own a car?</p>
+                <div className={`flex justify-between`}>
+                    <div className='content-center'>
+                        <p className={`banner-subtitle`} >Your Ride, Your Savings</p>
+                    </div>
+                    <div className="content-end place-items-end">
+                        <SportsCar color={'white'} />
+                    </div>
                 </div>
-                <p className={`text-white text-4xl xl:text-5xl 2xl:text-8xl`} >Your Ride, Your Savings</p>
+            </div>
+            <div className={`square-banner`}>
+                <p className={`flex font-grotesqueBold banner-title`}>Ready to<br />own a car?</p>
+                <div className="banner-sportscar content-end place-items-end">
+                    <SportsCar color={'white'} />
+                </div>
+                <p className={`content-center banner-subtitle py-5`}>Your Ride, Your Savings</p>
             </div>
         </div>
     );
